@@ -31,7 +31,14 @@ function activate(context) {
         vscode.window.showErrorMessage("No file selected");
         return;
       }
-      await deleteFileViaRm(filePath);
+
+      try {
+        await deleteFileViaRm(filePath);
+      } catch (error) {
+        vscode.window.showErrorMessage(`Error deleting file: ${error.message}`);
+        return;
+      }
+
       vscode.window.showInformationMessage(`File deleted: ${filePath}`);
     }
   );
