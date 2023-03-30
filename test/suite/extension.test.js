@@ -3,10 +3,10 @@ const assert = require("assert");
 // You can import and use all API from the 'vscode' module
 // as well as import your extension to test it
 const vscode = require("vscode");
-const extension = require("../../extension");
+// const extension = require("../../extension");
 const fs = require("fs");
 
-const { activate, getDocUri, createSampleFile } = require("../helper");
+const { getDocUri, createSampleFile } = require("../helper");
 
 suite("Extension Test Suite", () => {
   vscode.window.showInformationMessage("Start all tests.");

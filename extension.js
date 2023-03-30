@@ -5,7 +5,7 @@ const { exec } = require("child_process");
 
 function deleteFileViaRm(filePath) {
   return new Promise((resolve, reject) => {
-    exec(`rm "${filePath}"`, (err, stdout) => {
+    exec(`rm "${filePath}"`, (err) => {
       if (err) {
         console.error(`Error deleting file: ${err.message}`);
         reject(err);
