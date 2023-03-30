@@ -3,7 +3,7 @@
   "displayName": "Delete File and Keep Open",
   "description": "Delete a file and keep it open in the editor, instead of it being automatically closed by VS Code.",
   "version": "0.0.1",
-  "publisher": "David Alejandro",
+  "publisher": "davidalejandroaguilar",
   "engines": {
     "vscode": "^1.76.0"
   },
