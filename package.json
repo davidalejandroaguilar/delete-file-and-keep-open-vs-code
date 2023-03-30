@@ -2,7 +2,7 @@
   "name": "delete-file-and-keep-open",
   "displayName": "Delete File and Keep Open",
   "description": "Delete a file and keep it open in the editor, instead of it being automatically closed by VS Code.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "davidalejandroaguilar",
   "engines": {
     "vscode": "^1.76.0"
@@ -15,14 +15,15 @@
     "Other"
   ],
   "icon": "media/icon.png",
-  "activationEvents": [
-  ],
+  "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "delete-file-and-keep-open.deleteAndKeepOpen",
-      "title": "Delete and Keep Open"
-    }]
+    "commands": [
+      {
+        "command": "delete-file-and-keep-open.deleteAndKeepOpen",
+        "title": "Delete and Keep Open"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
