@@ -7,10 +7,14 @@
   "engines": {
     "vscode": "^1.76.0"
   },
-  "repository": "https://github.com/davidalejandroaguilar/delete-file-and-keep-open-vs-code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidalejandroaguilar/delete-file-and-keep-open-vs-code"
+  },
   "categories": [
     "Other"
   ],
+  "icon": "media/icon.png",
   "activationEvents": [
   ],
   "main": "./extension.js",
