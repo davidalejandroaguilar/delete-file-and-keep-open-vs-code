@@ -38,8 +38,6 @@ function activate(context) {
         vscode.window.showErrorMessage(`Error deleting file: ${error.message}`);
         return;
       }
-
-      vscode.window.showInformationMessage(`File deleted: ${filePath}`);
     }
   );
 
